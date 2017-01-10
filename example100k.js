@@ -15,7 +15,9 @@ $(function () {
 
     // generate data
     var data = [];
-    for (var i = 0; i < 1000000; ++i) {
+    for (var i = 0; i < 100000; ++i) {
+	    if (i%1000 == 0)
+		    console.log(i/1000,"%");
         data.push({
             "id": i + 1,
             "created_at": new Date().toDateString(),
